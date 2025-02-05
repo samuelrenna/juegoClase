@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    color: #2d3748;
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.score {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.question {
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #ebf4ff;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.options button {
+    display: block;
+    width: 85%;
+    margin: 12px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4c51bf;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.options button:hover {
+    transform: translateY(-2px);
+    background-color: #434190;
+    box-shadow: 0 4px 12px rgba(76, 81, 191, 0.2);
+}
+
+.result {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.correct {
+    background-color: #48bb78 !important;
+}
+
+.incorrect {
+    background-color: #f56565 !important;
+}
+
+#startButton {
+    background-color: #5a67d8;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #434190;
+    transform: translateY(-2px);
+}
+
+.header-icon {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #5a67d8;
+    transition: width 0.3s ease;
+}
