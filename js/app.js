@@ -10,7 +10,7 @@ const questions = [
         correct: 0
     },
     {
-        question: "¿ Cuales son herramientas y aplicaciones de analicis de datos ?",
+        question: "¿ Cuales son herramientas y aplicaciones de analisis de datos ?",
         options: [
             "A) Power BI y Tableau",
             "B) Spotify",
