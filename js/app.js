@@ -67,7 +67,8 @@ function startGame() {
 }
 
 function updateProgress() {
-    const progress = (currentQuestion / questions.length) * 100;
+
+    const progress = ((currentQuestion + 1) / questions.length) * 100;
     document.getElementById('progress').style.width = `${progress}%`;
 }
 
@@ -85,7 +86,7 @@ function showQuestion() {
     `;
 
     gameArea.innerHTML = html;
-    updateProgress();
+    updateProgress(); 
 }
 
 function checkAnswer(selectedIndex) {
@@ -108,9 +109,10 @@ function checkAnswer(selectedIndex) {
         if (currentQuestion < questions.length) {
             showQuestion();
         } else {
+            updateProgress();
             endGame();
         }
-    }, 1500);
+    }, 500);
 }
 
 function endGame() {
